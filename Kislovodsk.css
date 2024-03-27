@@ -1,0 +1,150 @@
+/* Общие стили для всего документа */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Стили для верхнего блока сайта */
+.site-header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Стили для навигационной панели */
+.site-nav {
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+    padding: 10px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+/* Стили для выпадающего меню */
+.dropdown {
+    display: inline-block;
+}
+
+.dropbtn {
+    color: white;
+    background-color: #555;
+    padding: 10px 20px;
+    border: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #777;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #777;
+}
+
+/* Стили для блоков с информацией */
+.site-content {
+    display: flex;
+    justify-content: flex-start; /* Изменил выравнивание на левую сторону */
+}
+
+.info-block {
+        margin: 10px 10px 10px 80px;
+    padding-left: 220px;
+    border: 1px solid #ccc;
+    color: #333;
+    
+    transition: max-width 0.3s; /* Изменил width на max-width */
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+.previewtext {
+    padding-left: 20px;
+}
+
+.image {
+    margin-top: 10px;
+}
+
+.item {
+    clear: both;
+}
+
+.info-content {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+
+.info-image {
+    max-width: 100%;
+    height: auto;
+    width: 210px;
+    max-height: 210px;
+}
+
+.info-image2 {
+    max-width: 100%;
+    height: auto;
+    width: 398px;
+    max-height: 210px;
+}
+
+/* Стили для меню слева */
+#left-menu {
+    width: 200px;
+    height: 100vh;
+    background-color: #eee;
+    float: left;
+    padding: 10px;
+}
+
+/* Общие стили для контента */
+#content {
+    margin-left: 220px; /* Учитываем ширину левого меню */
+    padding: 20px;
+    overflow: auto; /* Добавлено для правильного отображения контента */
+}
+
+/* Стили для кнопок в левом меню */
+#left-menu button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Стили для линии разделения в левом меню */
+#left-menu hr {
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
